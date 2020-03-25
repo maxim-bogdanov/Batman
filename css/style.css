@@ -162,6 +162,7 @@ body{
   margin-top: 108px;
   display: flex;
   color: #000;
+  padding-bottom: 84px;
 }
 .button-watch{
   display: block;
@@ -172,6 +173,7 @@ body{
   background: #FF8F27;
   border: none;
   color: #fff;
+
   margin-top: 20px;
   cursor: pointer;
 }
@@ -219,9 +221,13 @@ body{
   text-decoration: none;
   display: inline-block;
   margin-right: 40px;
+  font-weight: 600;
 }
-.inner__side-bar{
+.inner__side-bar {
   margin-left: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .right-inner{
   margin-top: 40.5px;
@@ -232,4 +238,48 @@ body{
   font-weight: normal;
   font-size: 16px;
   line-height: 140%;
+}
+.about__title{
+  margin-top:33px;
+  margin-bottom:23px;
+  font-weight: 800;
+}
+.content-menu ul li .link-active {
+  color:#FF8F27;
+}
+.inner__side-bar a{
+  display: block;
+}
+.flag2{
+  /* margin-right: 5px; */
+}
+.title-form{
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+.form-mail{
+  display: flex;
+  /* display: inline-block; */
+  justify-content: center;
+}
+.mail{
+  background: rgba(241, 241, 241, 0.5);
+  padding: 12px 15px;
+  border: none;
+  outline: none;
+  width:100%;
+}
+.button-check{
+  background: #FF8F27;
+  border: none;
+  outline: none;
+  border-radius: 0px 5px 5px 0px;
+  padding: 12.66px 11.75px;
+
+}
+.banner{
+  margin-top: 48px;
+}
+.mail::placeholder{
+  color: #9B9B9B;
 }
