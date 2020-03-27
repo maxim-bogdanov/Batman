@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Batman</title>
 </head>
@@ -15,7 +16,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__top">
+      <div class="header__top animated fadeInDown">
         <div class="logo">
           КиноПульс
         </div>
@@ -34,19 +35,20 @@
   </header>
   <main class="main">
     <div class="container">
-      <h1 class="title">Бэтмен</h1>
-      <small class="title-en">The Batman</small>
-      <div class="info">
-        <div class="movie-info">
+      <h1 class="title animated fadeInLeft">Бэтмен</h1>
+      <small class="title-en animated fadeInLeft">The Batman</small>
+      <div class="info animated fadeInUp delay-2s">
+        <div class="movie-info" >
           <span class="tag">Фильм</span>
           <span class="country">США, 2021 год</span>
-          <a href="#" class="play">Смотреть трейлер</a>
+          <a class="play animated tada" data-fancybox href="https://www.youtube.com/watch?v=Xo8i2ZDMlQg;autoplay=1&amp;rel=0&amp;">
+            Смотреть трейлер</a>
         </div>
-        <a href="#" class="more">Подробнее</a>
+        <a href="#cont" class="more">Подробнее</a>
       </div>
     </div>
   </main>
-  <div class="content">
+  <div class="content animated fadeIn delay-1s" >
     <div class="container">
       <div class="content-inner">
         <div class="content-left">
@@ -73,19 +75,19 @@
         <div class="content-right">
           <nav class="content-menu">
             <ul>
-              <li><a href="#" class="link-active">Описание</a></li>
-              <li><a href="#">Рецензии</a></li>
-              <li><a href="#">Премьеры</a></li>
-              <li><a href="#">Актеры</a></li>
-              <li><a href="#">Награды</a></li>
-              <li><a href="#">Факты</a></li>
-              <li><a href="#">Сайты</a></li>
+              <li class="tabs-item-li"><a href="#about" class="tabs-item active-link">Описание</a></li>
+              <li class="tabs-item-li"><a href="#premiers" class="tabs-item">Премьеры</a></li>
+              <li class="tabs-item-li"><a href="#actors" class="tabs-item">Актеры</a></li>
+              <li class="tabs-item-li"><a href="#reviews" class="tabs-item">Рецензии</a></li>
+              <li class="tabs-item-li"><a href="#awards" class="tabs-item">Награды</a></li>
+              <li class="tabs-item-li"><a href="#facts" class="tabs-item">Факты</a></li>
+              <li class="tabs-item-li"><a href="#websites" class="tabs-item">Сайты</a></liclass="tabs-item">
             </ul>
             <img src="img/flag2.svg" class="flag2"></img>
           </nav>
           <div class="right-inner">
             <div class="inner__data">
-              <div class="data-about">
+              <div class="data-item visible" id="about">
                 <p>Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах издательства DC
                   Comics. Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.
                 </p>
@@ -114,12 +116,85 @@
                   </p>
                 </p>
               </div>
+              <div class="data-item" id="reviews">
+                Скоро здесь появятся рецензии
+              </div>
+              <div class="data-item" id="premiers">
+                <ul class="premiers-list">
+                  <li class="pr-item"><span>24 июня 2021</span> Аргентина</li>
+                  <li class="pr-item"><span>24 июня 2021</span> Россия</li>
+                  <li class="pr-item"><span>24 июня 2021</span> Словакия</li>
+                  <li class="pr-item"><span>25 июня 2021</span> Американские Виргинские острова</li>
+                  <li class="pr-item"><span>25 июня 2021</span> Бельгия</li>
+                  <li class="pr-item"><span>25 июня 2021</span> Бразилия</li>
+                  <li class="pr-item"><span>25 июня 2021</span> Великобритания</li>
+                  <li class="pr-item"><span>25 июня 2021</span> Канада</li>
+                  <li class="pr-item"><span>25 июня 2021</span> Литва</li>
+                  <li class="pr-item"><span>25 июня 2021</span> Португалия</li>
+                  <li class="pr-item"><span>25 июня 2021</span> США</li>
+                </ul>
+              </div>
+              <div class="data-item" id="actors">
+                <div class="actor-items">
+                  <div class="actor-item">
+                    <img src="img/rob.png" alt="">
+                    <div class="actor-about">
+                      <h2 class="actor-name">Роберт Паттинсон</h2>
+                      <div class="actor-pers">Брюс Уэйн / Бэтмен</div>
+                    </div>
+                  </div>
+                  <div class="actor-item">
+                    <img src="img/zoi.png" alt="">
+                    <div class="actor-about">
+                      <h2 class="actor-name">Зои Кравиц</h2>
+                      <div class="actor-pers">Селина Кайл</div>
+                    </div>
+                  </div>
+                  <div class="actor-item">
+                    <img src="img/paul.png" alt="">
+                    <div class="actor-about">
+                      <h2 class="actor-name">Пол Дано</h2>
+                      <div class="actor-pers">Эдвард Нэштон </div>
+                    </div>
+                  </div>
+                  <div class="actor-item">
+                    <img src="img/jeff.png" alt="">
+                    <div class="actor-about">
+                      <h2 class="actor-name">Джеффри Райт</h2>
+                      <div class="actor-pers">Джеймс Гордон</div>
+                    </div>
+                  </div>
+                  <div class="actor-item">
+                    <img src="img/endi.png" alt="">
+                    <div class="actor-about">
+                      <h2 class="actor-name">Энди Сёркис</h2>
+                      <div class="actor-pers">Альфред Пенниуорт</div>
+                    </div>
+                  </div>
+                  <div class="actor-item">
+                    <img src="img/john.png" alt="">
+                    <div class="actor-about">
+                      <h2 class="actor-name">Джон Туртурро</h2>
+                      <div class="actor-pers">Кармайн Фальконе</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="data-item" id="awards">
+                У фильма пока нет наград.
+              </div>
+              <div class="data-item" id="facts">
+                Известных фактов пока что нет.
+              </div>
+              <div class="data-item" id="websites">
+                Скоро здесь появятся рецензии
+              </div>
             </div>
             <div class="inner__side-bar">
               <h2 class="title-form" >Подпишитесь на обновления</h2>
               <form action="" class="form-mail">
                 <input type="mail" class="mail"  placeholder="Ваш Email">
-                <button class="button-check"><img src="img/check.svg" alt=""></button>
+                <button class="button-check "><img src="img/check.svg" alt=""></button>
               </form>
               <a href="#"><img src="img/banner.png" alt="" class="banner"></a> 
             </div>
@@ -128,6 +203,10 @@
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,18 +1,18 @@
-$(function(){
-
-  $('.slider').slick({
-    dots: true,
-    arrows: false,
-    vertical: true,
-    dotsClass: 'header-dots',
-    // swipeToSlide: true,
-    // verticalSwiping: true,
-    autoplay: 2000
+$(document).ready(function () {
+  let tabsItem = $('.tabs-item');
+  tabsItem.on('click', function(event){
+    event.preventDefault();
+    let activeContent = $(this).attr('href');
+    $('.active-link').toggleClass('active-link');
+    $('.visible').toggleClass('visible');
+    $(activeContent).toggleClass('visible');
+    $(this).toggleClass('active-link');
   });
-
-  $('.menu-btn').on('click', function(){
-    $('.menu ul').slideToggle();
-    $('.menu-btn__line').toggleClass('active-btn__line');
+  $('.button-check').on('click', function(event){
+    event.preventDefault();
+    $('.button-check').toggleClass('button-color');
   });
-
+  $('.search-button').on('click', function(event){
+    event.preventDefault();
+  });
 });
